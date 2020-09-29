@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-sizing: border-box;
+}
+
+html {
+    color: #060A24;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+:root {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 6.5rem;
+    font-family: $base-font;
+    font-weight: 200;
+}
+
+h2 {
+    @include titles(#060A24);
+}
+
+p {
+    @include text;
+}
+
+button {
+    @include button-normal;
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+}
+
+.button {
+    padding: 50px 16px 80px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+/*Section Home*/
+
+.home {
+    margin: 16px 16px 0;
+}
+
+.home h1 {
+    width: 70%;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.textDesktop {
+    display: none;
+}
+
+i {
+    padding-top: 15px;
+    font-size: 2rem;
+}
+
+/*Section home*/
+
+.home {
+    padding-top: 30px;
+}
+
+
+/* Section: Episodes */
+
+.episodes {
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    background: linear-gradient(to left, #0000FF, #0000A3);
+    max-width: 100vw;
+    padding: 150px 16px 250px;
+}
+
+.episodes h2 {
+    color: white;
+    margin: 21px 16px 64px;
+}
+
+.episodesList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    min-height: 232px;
+    border: 0;
+}
+
+/*Section us*/
+
+.imagePhone {
+    position: relative;
+    top: -80px;
+}
+
+.textBlock {
+    margin: 0 36px 100px;
+}
+
+.textBlock p {
+    margin-bottom: 50px;
+}
+
+.textContainer {
+    width: 70%;
+    margin-top: 50px;
+}
+
+/*Gallery*/
+
+.gallery {
+    width: 100vw;
+    margin-bottom: 150px;
+}
+
+/*Topics*/
+
+.topics {
+    padding: 50px 250px;
+}
+
+.topics li {
+    margin-bottom: 150px;
+    list-style: none;
+}
+
+.topics li h3 {
+    @include textList;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.topics li div {
+    padding: 0 50px;
+}
+
+/*CallToAction*/
+
+.callToAction {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(to left, #0000FF, #0000A3);
+    padding: 250px 50px;
+    color: white;
+    text-align: center;
+}
+

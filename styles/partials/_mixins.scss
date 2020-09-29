@@ -1,0 +1,75 @@
+
+@mixin titles($base-color) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    margin: 16px 0 80px;
+    line-height: 100px;
+}
+
+@mixin titlesDesktop {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 65px;
+    margin: 16px 0 0;
+}
+
+@mixin button-normal {
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #00F3BB;
+    border: 0;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+@mixin buttonDesktop {
+    max-width: 330px;
+    font-size: 1.125rem;
+    margin-top: 40px;
+}
+
+@mixin text {
+    font-size: 1rem;
+    font-family: $text-font;
+}
+
+@mixin textList {
+    font-family: $base-font;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+@mixin container {
+    padding: 10px 0 0 50px;
+    width: 80%;
+}
+
+@mixin textMenu {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+@mixin textHover {
+    text-decoration: line-through;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 3rem;
+    color: $secundary-color;
+}
+
+@mixin textMenuDesktop {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: $base-color;
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+
+@mixin textMenuDesktopHover {
+    font-size: 1.2rem;
+    color: $secundary-color;
+    font-family: 'IBM Plex Mono', sans-serif;
+}

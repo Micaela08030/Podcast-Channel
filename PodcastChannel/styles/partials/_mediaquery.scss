@@ -1,0 +1,225 @@
+
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.75rem;
+        margin: 120px 0 20px;
+    }
+
+    h2 {
+        @include titlesDesktop;
+    }
+
+    p {
+        @include textDesktop;
+    }
+
+    button {
+        padding: 16px 0px;
+        @include buttonDesktop;
+    }
+
+    .textContainer {
+        width: auto;
+    }
+
+    .textBlock {
+        margin: 0 200px 50px;
+    }
+
+    .button {
+        margin: 10px 0;
+        padding-top: 0;
+    }
+
+    .point {
+        color: blue;
+    }
+
+    .container {
+        @include container;
+    }
+
+    .home {
+        margin: 50px 200px 0;
+    }
+
+    .home h1 {
+        width: 100%;
+    }
+
+    .textDesktop {
+        display: initial;
+    }
+
+    .textMobile {
+        display: none;
+    }
+
+
+    i {
+        padding-top: 0px;
+        font-size: 1rem;
+    }
+
+    /*Header*/
+
+    header {
+        height: 66px;
+    }
+
+    header a img {
+        width: 3.5%;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav .menu {
+        padding: 0;
+    }
+
+    header nav .menu ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+        margin: 0;
+    }
+
+    header nav .menu ul li {
+        @include textMenuDesktop;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+
+    header nav .menu ul li:hover {
+        @include textMenuDesktopHover;
+    }
+
+    header nav .menu ul li a {
+        color: $base-color;
+        padding: unset;
+        line-height: unset;
+    }
+
+    header nav .menu ul li a:hover {
+        @include textMenuDesktopHover;
+    }
+
+    header nav .menu input {
+        display: none;
+    }
+
+    header nav .menu span {
+        display: none;
+    }
+
+    /*Section episodes*/
+
+    .episodes {
+        clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);
+        padding: 100px 16px 200px;
+        background: linear-gradient(to left, #0000FF, #0000A3);
+    }
+
+    .episodes h2 {
+        margin: 60px 200px 26px;
+    }
+
+    .episodesList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .episodesList div {
+        margin: 10px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+
+    /*Section our*/
+
+    .nosotros {
+        display: flex;
+        padding: 0 80px;
+    }
+
+    .imagePhone {
+        width: 100%;
+        top: -60px;
+    }
+
+    .textBlock p {
+        margin-bottom: 0;
+    }
+
+
+    /*Section Gallery*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 100px;
+    }
+
+    /*Section topics*/
+
+    .topics {
+        display: flex;
+        padding: 30px 100px;
+        justify-content: space-around;
+    }
+
+    .topics li {
+        width: 20%;
+        margin-bottom: 30px;
+    }
+
+    .topics li h3 {
+        margin-top: 20px;
+    }
+
+    .topics li h3 {
+        font-size: 1.5rem;
+    }
+
+    .topics li div {
+        padding: 0 80px;
+    }
+
+    /*Call to action*/
+
+    .callToAction {
+        padding: 200px 50px;
+        background: linear-gradient(to left, #0000FF, #0000A3);
+    }
+
+
+    /*Footer*/
+
+    footer {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+    }
+
+    footer p {
+        text-align: left;
+        padding: 0px 50px;
+    }
+
+    footer ul {
+        width: 30%;
+        align-items: center;
+        justify-self: flex-end;
+    }
+
+}
